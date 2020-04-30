@@ -122,8 +122,4 @@ dist
 .idea/jsLibraryMappings.xml
 .idea/misc.xml
 .idea/modules.xml
-db.json
-package.json
-server.js
-src/
 yarn.lock
