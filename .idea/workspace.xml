@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="62f9b45c-2d4a-4d2e-87cf-eaafeab14bf1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bUpe9j7uDS3o6QjhSGuAzb8Pd2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="13.9.0" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bovor\Desktop\SimpleDynamicKeyStrokeWeb\src\js" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62f9b45c-2d4a-4d2e-87cf-eaafeab14bf1" name="Default Changelist" comment="" />
+      <created>1588696618828</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588696618828</updated>
+      <workItem from="1588696622814" duration="150000" />
+      <workItem from="1588696786499" duration="13000" />
+      <workItem from="1588696811903" duration="7223000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="709" y="281" key="FileChooserDialogImpl" timestamp="1588696725867">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="709" y="281" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1588696725867" />
+    <state x="708" y="384" key="cloudConfig.PluginsDialog" timestamp="1588696757176">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="708" y="384" key="cloudConfig.PluginsDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1588696757176" />
+    <state x="801" y="384" key="cloudConfig.SelfSettingsDialog" timestamp="1588696752802">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="801" y="384" key="cloudConfig.SelfSettingsDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1588696752802" />
+    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1588696844104">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1588696844104" />
+  </component>
+</project>

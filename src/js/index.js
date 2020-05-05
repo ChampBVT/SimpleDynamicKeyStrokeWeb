@@ -2,8 +2,8 @@
     const result = document.getElementById('result');
     const login = document.getElementById('login');
     const pwdInput = document.getElementById('password');
-    let start2;
-    let stop2;
+    let start;
+    let stop;
     const timeMap = [];
 
     login.addEventListener('submit',
@@ -11,6 +11,7 @@
             e.preventDefault();
             postLogin(login.username.value, login.password.value, timeMap)
                 .then((res) => {
+                    console.log(res)
                     const ids = [...document.querySelectorAll("#result [id]")];
                     if(res.status === "authenticated") {
                         ids[0].innerText = "Welcome!"
@@ -31,7 +32,7 @@
                         result.style.display = "flex"
                     }
                     timeMap.length=0
-                    login.username.value="a"
+                    login.username.value=""
                     login.password.value=""
                 });
         })
@@ -41,19 +42,19 @@
 
     function logKeyStart(e) {
         if((e.keyCode>=48 && e.keyCode<=90)||(e.keyCode>=96 && e.keyCode<=111)||(e.keyCode>=186 && e.keyCode<=222)) {
-            start2 = e.timeStamp
+            start = e.timeStamp
         } else if(e.keyCode === 8 || e.keyCode === 46){
             timeMap.length=0
-            login.username.value="a"
+            login.username.value=""
             login.password.value=""
         }
     }
 
     function logKeyStop(e) {
         if((e.keyCode>=48 && e.keyCode<=90)||(e.keyCode>=96 && e.keyCode<=111)||(e.keyCode>=186 && e.keyCode<=222)) {
-            stop2 = e.timeStamp
+            stop = e.timeStamp
             timeMap.push({
-                [`${e.key}`]: stop2 - start2
+                [`${e.key}`]: stop - start
             })
             console.log(timeMap);
         }
