@@ -3,10 +3,11 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const distance = require('euclidean-distance')
 const coDistance = require( 'compute-cosine-distance' );
+const distancejs = require('distancejs');
 const coSim = require('cos-similarity')
 const app = express()
 const fs = require('fs');
-const dist_threshold = 100;
+const dist_threshold = 120;
 const cosine_threshold = .95;
 
 const htmlPath = path.join(__dirname, 'src');
@@ -23,14 +24,22 @@ app.post('/login', (req, res) => {
     const dbjson = fs.readFileSync('db.json');
     const db = JSON.parse(dbjson);
     const response = { }
-
     if(db.password === req.body.password) {
+        //console.log(db.stroke)
+        //console.log(req.body.stroke)
         const savedTimeMap = Object.keys(db.stroke).map(function (key) {
             return db.stroke[key][`${Object.keys(db.stroke[key])[0]}`]
         });
         const inputTimeMap = Object.keys(req.body.stroke).map(function (key) {
             return req.body.stroke[key][`${Object.keys(req.body.stroke[key])[0]}`]
         });
+        console.log("euclidean "+distancejs.euclidean(inputTimeMap, savedTimeMap));
+        console.log("manhattan "+distancejs.manhattan(inputTimeMap, savedTimeMap));
+        console.log("chebyshev "+distancejs.chebyshev(inputTimeMap, savedTimeMap));
+        console.log("angularSim"+distancejs.angularSimilarity(inputTimeMap, savedTimeMap));
+        console.log("cosine "+distancejs.cosineSimilarity(inputTimeMap, savedTimeMap));
+        console.log("angular "+distancejs.angular(inputTimeMap, savedTimeMap));
+        console.log('\n')
         const dist = distance(inputTimeMap, savedTimeMap)
         const cosim = coSim(inputTimeMap, savedTimeMap)
         response.username = db.username;
@@ -40,7 +49,7 @@ app.post('/login', (req, res) => {
             response.status = "unauthenticated"
         else
             response.status = "authenticated"
-        console.log(dist)
+        //console.log(dist)
     }else{
         response.status = "failed"
     }
