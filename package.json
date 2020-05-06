@@ -9,5 +9,12 @@
     "express": "^4.17.1",
     "mongodb": "^3.5.7",
     "nodemon": "^2.0.3"
+  },
+  "engines": {
+    "node": "12.15.0",
+    "yarn": "1.22.4"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }
