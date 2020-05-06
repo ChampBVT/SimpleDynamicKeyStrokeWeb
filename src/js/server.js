@@ -3,8 +3,8 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const distancejs = require('distancejs');
 const app = express()
-const dist_threshold = 150;
-const cosine_threshold = .90;
+const dist_threshold = 180;
+const cosine_threshold = .85;
 
 const htmlPath = path.join(__dirname, '../');
 app.use(express.static(htmlPath));
