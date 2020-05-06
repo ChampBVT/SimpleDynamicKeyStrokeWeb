@@ -1,6 +1,6 @@
 {
   "name": "simple-dynamic-keystroke",
-  "version": "1",
+  "version": "0.1",
   "main": "src/js/server.js",
   "license": "MIT",
   "dependencies": {
