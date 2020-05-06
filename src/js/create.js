@@ -1,11 +1,12 @@
 (()=>{
-
+    const dup_warn = document.getElementById('duplicate_user');
     const register = document.getElementById('register');
     const pwdInput = document.getElementById('password');
     let start;
     let stop;
     const timeMap = [];
 
+    dup_warn.style.display = 'none';
     register.addEventListener('submit',
         function(e){
             e.preventDefault();
@@ -14,6 +15,10 @@
                     console.log(res)
                     if(res.status === "created") {
                         window.location = '/index.html'
+                    }
+                    if(res.status === "duplicate username" && dup_warn.style.display === "none"){
+                        dup_warn.style.display = 'block';
+                        console.log('dup_error');
                     }
                     timeMap.length=0
                     register.username.value=""
