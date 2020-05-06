@@ -14,6 +14,7 @@
                 .then((res) => {
                     console.log(res)
                     if(res.status === "created") {
+                        alert("Account created!")
                         window.location = '/index.html'
                     }
                     if(res.status === "duplicate username" && dup_warn.style.display === "none"){
