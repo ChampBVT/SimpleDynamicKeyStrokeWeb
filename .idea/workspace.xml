@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62f9b45c-2d4a-4d2e-87cf-eaafeab14bf1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/js/apiCall.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/apiCall.js" afterDir="false" />
-    </list>
+    <list default="true" id="62f9b45c-2d4a-4d2e-87cf-eaafeab14bf1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +58,7 @@
       <workItem from="1588696786499" duration="13000" />
       <workItem from="1588696811903" duration="7223000" />
       <workItem from="1588764222083" duration="789000" />
-      <workItem from="1588785222839" duration="894000" />
+      <workItem from="1588785222839" duration="951000" />
     </task>
     <servers />
   </component>

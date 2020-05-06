@@ -1,4 +1,4 @@
-const API_URL = 'https://frozen-citadel-56098.herokuapp.com';
+const API_URL = 'https://dynamickeystroke.herokuapp.com';
 
 async function postLogin(usr, pwd, map, flightMap) {
     const result = await fetch(`${API_URL}/login`, {
