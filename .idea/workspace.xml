@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62f9b45c-2d4a-4d2e-87cf-eaafeab14bf1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="WrongPwd" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,6 +62,7 @@
       <workItem from="1588696786499" duration="13000" />
       <workItem from="1588696811903" duration="7223000" />
       <workItem from="1588764222083" duration="789000" />
+      <workItem from="1588785222839" duration="287000" />
     </task>
     <servers />
   </component>
@@ -67,18 +70,14 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="693" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588784624107">
-      <screen x="0" y="0" width="1857" height="1080" />
-    </state>
-    <state x="693" y="329" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1857.1080@0.0.1857.1080" timestamp="1588784624107" />
     <state x="709" y="281" key="FileChooserDialogImpl" timestamp="1588696725867">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="709" y="281" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1588696725867" />
-    <state x="178" y="89" key="MergeDialog" timestamp="1588775960108">
+    <state x="178" y="89" key="MergeDialog" timestamp="1588785169944">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
-    <state x="178" y="89" key="MergeDialog/0.0.1857.1080@0.0.1857.1080" timestamp="1588775960108" />
+    <state x="178" y="89" key="MergeDialog/0.0.1857.1080@0.0.1857.1080" timestamp="1588785169944" />
     <state x="708" y="384" key="cloudConfig.PluginsDialog" timestamp="1588696757176">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -91,10 +90,10 @@
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
     <state x="637" y="257" width="583" height="566" key="find.popup/0.0.1857.1080@0.0.1857.1080" timestamp="1588764463990" />
-    <state x="694" y="170" key="git4idea.branch.GitSmartOperationDialog" timestamp="1588775951835">
+    <state x="694" y="170" key="git4idea.branch.GitSmartOperationDialog" timestamp="1588785135779">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
-    <state x="694" y="170" key="git4idea.branch.GitSmartOperationDialog/0.0.1857.1080@0.0.1857.1080" timestamp="1588775951835" />
+    <state x="694" y="170" key="git4idea.branch.GitSmartOperationDialog/0.0.1857.1080@0.0.1857.1080" timestamp="1588785135779" />
     <state x="592" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1588696844104">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>

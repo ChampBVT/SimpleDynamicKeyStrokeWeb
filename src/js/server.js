@@ -25,8 +25,8 @@ MongoClient.connect("mongodb+srv://admin:security@dynamickeystroke-iaiao.mongodb
 
         console.log("connected to the database ");
 
-        app.listen(3000, () => {
-            console.log('Start server at port 3000.')
+        app.listen(process.env.PORT || 3000, function(){
+            console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
         });
 
         app.get(
