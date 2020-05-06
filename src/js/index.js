@@ -1,4 +1,5 @@
 (()=>{
+    const wrong_pwd = document.getElementById('incorrect_password');
     const result = document.getElementById('result');
     const login = document.getElementById('login');
     const pwdInput = document.getElementById('password');
@@ -6,6 +7,7 @@
     let stop;
     const timeMap = [];
 
+    wrong_pwd.style.display = 'none';
     login.addEventListener('submit',
         function(e){
             e.preventDefault();
@@ -13,6 +15,9 @@
                 .then((res) => {
                     console.log(res)
                     const ids = [...document.querySelectorAll("#result [id]")];
+                    if(res.status === "invalid username or password" && wrong_pwd.style.display === 'none'){
+                        wrong_pwd.style.display = 'block';
+                    }
                     if(res.status === "authenticated") {
                         ids[0].innerText = "Welcome!"
                         ids[0].style.color = "green"
