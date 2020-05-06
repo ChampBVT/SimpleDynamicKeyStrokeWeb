@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62f9b45c-2d4a-4d2e-87cf-eaafeab14bf1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +67,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="693" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588784624107">
+      <screen x="0" y="0" width="1857" height="1080" />
+    </state>
+    <state x="693" y="329" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1857.1080@0.0.1857.1080" timestamp="1588784624107" />
     <state x="709" y="281" key="FileChooserDialogImpl" timestamp="1588696725867">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
