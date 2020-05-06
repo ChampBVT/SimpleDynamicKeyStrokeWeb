@@ -1,6 +1,6 @@
 const API_URL = 'http://localhost:3000';
 
-async function postLogin(usr, pwd, map) {
+async function postLogin(usr, pwd, map, flightMap) {
     const result = await fetch(`${API_URL}/login`, {
         method: 'POST',
         headers: {
@@ -9,13 +9,14 @@ async function postLogin(usr, pwd, map) {
         body: JSON.stringify({
             username : usr,
             password : pwd,
-            stroke : map
+            stroke : map,
+            flight : flightMap
         })
     });
     return await result.json();
 }
 
-async function createUser(usr, pwd, map) {
+async function createUser(usr, pwd, map, flightMap) {
     const result = await fetch(`${API_URL}/create`, {
         method: 'POST',
         headers: {
@@ -24,7 +25,8 @@ async function createUser(usr, pwd, map) {
         body: JSON.stringify({
             username : usr,
             password : pwd,
-            stroke : map
+            stroke : map,
+            flight : flightMap
         })
     });
     return await result.json();

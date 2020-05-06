@@ -3,8 +3,8 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const distancejs = require('distancejs');
 const app = express()
-const dist_threshold = 120;
-const cosine_threshold = .95;
+const dist_threshold = 150;
+const cosine_threshold = .90;
 
 const htmlPath = path.join(__dirname, '../');
 app.use(express.static(htmlPath));
@@ -70,37 +70,39 @@ MongoClient.connect("mongodb+srv://admin:security@dynamickeystroke-iaiao.mongodb
                     if (result.password !== req.body.password)
                         res.status(400).send({status: "invalid username or password"});
                     else {
-                        const savedTimeMap = Object.keys(result.stroke).map(function (key) {
-                            return result.stroke[key][`${Object.keys(result.stroke[key])[0]}`]
-                        });
-                        const inputTimeMap = Object.keys(req.body.stroke).map(function (key) {
-                            return req.body.stroke[key][`${Object.keys(req.body.stroke[key])[0]}`]
-                        });
+                        const savedTimeMap = mapToArray(result.stroke)
+                        const inputTimeMap = mapToArray(req.body.stroke)
                         const euclidean = distancejs.euclidean(inputTimeMap, savedTimeMap);
-                        const manhattan = distancejs.manhattan(inputTimeMap, savedTimeMap);
-                        const chebyshev = distancejs.chebyshev(inputTimeMap, savedTimeMap);
-                        const angular = distancejs.angularSimilarity(inputTimeMap, savedTimeMap);
                         const cosine = distancejs.cosineSimilarity(inputTimeMap, savedTimeMap);
+                        const savedFlightMap = mapToArray(result.flight)
+                        const inputFlightMap = mapToArray(req.body.flight)
+                        const euclideanF = distancejs.euclidean(inputFlightMap, savedFlightMap);
+                        const cosineF = distancejs.cosineSimilarity(inputFlightMap, savedFlightMap);
                         const response = {
                             username: result.username,
-                            distance: euclidean,
-                            manhattan_dist: manhattan,
-                            chebyshev_dist: chebyshev,
-                            angular_sim: angular,
-                            cosine_sim: cosine
+                            euclidean_dist_stroke: euclidean,
+                            cosine_sim_stroke: cosine,
+                            euclidean_dist_flight: euclideanF,
+                            cosine_sim_flight: cosineF,
                         }
-                        if (euclidean > dist_threshold) {
-                            response.status = "unauthenticated"
-                            res.status(401).send(response)
-                        } else {
+                        if (euclidean<=dist_threshold&&euclideanF<=dist_threshold&&cosine>=cosine_threshold&&cosineF>=cosine_threshold) {
                             response.status = "authenticated"
                             res.status(200).send(response)
+                        } else {
+                            response.status = "unauthenticated"
+                            res.status(401).send(response)
                         }
                     }
                 }
             })
         })
     })
+
+const mapToArray = (map => {
+    return Object.keys(map).map(function (key) {
+        return map[key][`${Object.keys(map[key])[0]}`]
+    });
+});
 
 
 
