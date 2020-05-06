@@ -18,7 +18,7 @@
                 .then((res) => {
                     console.log(res)
                     const ids = [...document.querySelectorAll("#result [id]")];
-                    if(res.status === "invalid username or password" && wrong_pwd.style.display === 'none'){
+                    if(res.status === "invalid username or password"){
                         wrong_pwd.style.display = 'block';
                     } else {
                         if (res.status === "authenticated") {
